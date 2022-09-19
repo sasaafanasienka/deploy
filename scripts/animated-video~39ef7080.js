@@ -63,6 +63,7 @@ class $09e10fceeb4dff25$var$VideoFullscreen {
         });
         else this.modal.webkitEnterFullscreen().then(()=>{
             this.video.play();
+            this.video.click();
             this.modal.classList.add('video-modal--opened');
             document.addEventListener('fullscreenchange', this.closeModal);
             document.addEventListener('keyup', this.playPauseByKeyBoard);
